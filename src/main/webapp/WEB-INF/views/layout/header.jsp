@@ -1,184 +1,220 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-	<title>Home 03</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="<c:url value="resources/assets/images/icons/favicon.png"/>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/vendor/bootstrap/css/bootstrap.min.css"/>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css"/>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/fonts/iconic/css/material-design-iconic-font.min.css"/>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/fonts/linearicons-v1.0.0/icon-font.min.css"/>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/vendor/animate/animate.css"/>">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/vendor/css-hamburgers/hamburgers.min.css"/>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/vendor/animsition/css/animsition.min.css"/>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/vendor/select2/select2.min.css"/>">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/vendor/daterangepicker/daterangepicker.css"/>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/vendor/slick/slick.css"/>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/vendor/MagnificPopup/magnific-popup.css"/>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/vendor/perfect-scrollbar/perfect-scrollbar.css"/>">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/css/util.css"/>">
-	<link rel="stylesheet" type="text/css" href="<c:url value="resources/assets/css/main.css"/>">
-<!--===============================================================================================-->
+<title>ISMART STORE</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link
+	href="<c:url value="/resources/assets/css/bootstrap/bootstrap-theme.min.css" />"
+	rel="stylesheet" type="text/css" />
+<link
+	href="<c:url value="/resources/assets/css/bootstrap/bootstrap.min.css" />"
+	rel="stylesheet" type="text/css" />
+<link href="<c:url value="/resources/assets/reset.css" />"
+	rel="stylesheet" type="text/css" />
+<link
+	href="<c:url value="/resources/assets/css/carousel/owl.carousel.css" />"
+	rel="stylesheet" type="text/css" />
+<link
+	href="<c:url value="/resources/assets/css/carousel/owl.theme.css" />"
+	rel="stylesheet" type="text/css" />
+<link
+	href="<c:url value="/resources/assets/css/font-awesome/css/font-awesome.min.css" />"
+	rel="stylesheet" type="text/css" />
+<link href="<c:url value="/resources/assets/style.css"/>"
+	type="text/css" />
+<link href="<c:url value="/resources/assets/css/import/header.css"/>"
+	rel="stylesheet">
+<link href="<c:url value="/resources/assets/css/import/fonts.css"/>"
+	rel="stylesheet">
+<link href="<c:url value="/resources/assets/css/import/global.css"/>"
+	rel="stylesheet">
+<link href="<c:url value="/resources/assets/css/import/footer.css"/>"
+	rel="stylesheet">
+<link href="<c:url value="/resources/assets/css/import/home.css"/>"
+	rel="stylesheet">
+<link
+	href="<c:url value="/resources/assets/css/import/category_product.css"/>"
+	rel="stylesheet">
+<link href="<c:url value="/resources/assets/css/import/blog.css"/>"
+	rel="stylesheet">
+<link
+	href="<c:url value="/resources/assets/css/import/detail_product.css"/>"
+	rel="stylesheet">
+<link
+	href="<c:url value="/resources/assets/css/import/detail_blog.css"/>"
+	rel="stylesheet">
+<link href="<c:url value="/resources/assets/css/import/cart.css"/>"
+	rel="stylesheet">
+<link href="<c:url value="/resources/assets/css/import/checkout.css"/>"
+	rel="stylesheet">
+<link href="<c:url value="/resources/assets/css/import/popup.css"/>"
+	rel="stylesheet">
+<link href="<c:url value="/resources/assets/responsive.css" />"
+	rel="stylesheet" type="text/css" />
+
+
+<script src="<c:url value="/resources/assets/js/jquery-2.2.4.min.js"/>"
+	type="text/javascript"></script>
+<script
+	src="<c:url value="/resources/assets/js/elevatezoom-master/jquery.elevatezoom.js"/>"
+	type="text/javascript"></script>
+<script
+	src="<c:url value="/resources/assets/js/bootstrap/bootstrap.min.js"/>"
+	type="text/javascript"></script>
+<script
+	src="<c:url value="/resources/assets/js/carousel/owl.carousel.js"/>"
+	type="text/javascript"></script>
+<script src="<c:url value="/resources/assets/js/main.js"/>"
+	type="text/javascript"></script>
+<script src="<c:url value="/resources/assets/js/app.js"/>"
+	type="text/javascript"></script>
 </head>
-<body class="animsition">
-	
-	<!-- Header -->
-	<header class="header-v3">
-		<!-- Header desktop -->
-		<div class="container-menu-desktop trans-03">
-			<div class="wrap-menu-desktop">
-				<nav class="limiter-menu-desktop p-l-45">
-					
-					<!-- Logo desktop -->		
-					<a href="#" class="logo">
-						<img src="images/icons/logo-02.png" alt="IMG-LOGO">
-					</a>
 
-					<!-- Menu desktop -->
-					<div class="menu-desktop">
-						<ul class="main-menu">
-							<li>
-								<a href="/saharashop/trang-chu">Home</a>
-								<ul class="sub-menu">
-									<li><a href="index.html">Homepage 1</a></li>
-									<li><a href="home-02.html">Homepage 2</a></li>
-									<li><a href="home-03.html">Homepage 3</a></li>
+<body>
+	<div id="site">
+		<div id="container">
+			<div id="header-wp">
+				<div id="head-top" class="clearfix">
+					<div class="wp-inner">
+						<a href="" title="" id="payment-link" class="fl-left">Hình
+							thức thanh toán</a>
+						<div id="main-menu-wp" class="fl-right">
+							<ul id="main-menu" class="clearfix">
+								<li><a href="/i8-web/trang-chu" title="">Trang chủ</a></li>
+								<c:choose>
+									<c:when test="${sessionScope.userAccount != null}">
+										<li><a href="/i8-web/thong-tin-don-hang" title="">Thông
+												tin đơn hàng</a>
+										<li><a href="#" title="">${sessionScope.userAccount }</a></li>
+										<li><a href="/i8-web/user/logout" title="">Đăng xuất</a>
+									</c:when>
+									<c:otherwise>
+										<li><a href="/i8-web/login" title="">Đăng nhập</a></li>
+										<li><a href="/i8-web/signup" title="">Đăng ký</a></li>
+									</c:otherwise>
+								</c:choose>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div id="head-body" class="clearfix">
+					<div class="wp-inner">
+						<a href="/i8-web/trang-chu" title="" id="logo" class="fl-left"><img
+							src="/i8-web/resources/assets/images/logo-1.png" /></a>
+						<div id="search-wp" class="fl-left">
+							<form action="" method="POST" id="search">
+								<input type="text" name="" value=""
+									placeholder="Nhập từ khóa tìm kiếm tại đây!" id="s"
+									class="input_search"> <input type="submit"
+									name="btn_search" id="sm-s" value="Tìm kiếm" class="btn_search"
+									id="search_name">
+							</form>
+							<div class="show-search">
+								<ul class="list-item-show">
+										
 								</ul>
-							</li>
-
-							<li>
-								<a href="/saharashop/product">Shop</a>
-							</li>
-
-							<li class="label1" data-label1="hot">
-								<a href="/saharashop/gio-hang">Features</a>
-							</li>
-
-							<li>
-								<a href="/saharashop/blog">Blog</a>
-							</li>
-
-							<li>
-								<a href="/saharashop/about">About</a>
-							</li>
-
-							<li>
-								<a href="/saharashop/contact">Contact</a>
-							</li>
-						</ul>
-					</div>	
-
-					<!-- Icon header -->
-					<div class="wrap-icon-header flex-w flex-r-m h-full">							
-						<div class="flex-c-m h-full p-r-25 bor6">
-							<div class="icon-header-item cl0 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
-								<i class="zmdi zmdi-shopping-cart"></i>
 							</div>
 						</div>
-							
-						<div class="flex-c-m h-full p-lr-19">
-							<div class="icon-header-item cl0 hov-cl1 trans-04 p-lr-11 js-show-sidebar">
-								<i class="zmdi zmdi-menu"></i>
+						<div id="action-wp" class="fl-right">
+							<div id="advisory-wp" class="fl-left">
+								<span class="title">Tư vấn</span> <span class="phone">0987.654.321</span>
+							</div>
+							<div id="btn-respon" class="fl-right">
+								<i class="fa fa-bars" aria-hidden="true"></i>
+							</div>
+							<a href="/i8-web" title="giỏ hàng" id="cart-respon-wp"
+								class="fl-right"> <i class="fa fa-shopping-cart"
+								aria-hidden="true"></i> <span id="num">${ ITEMS}</span>
+							</a>
+							<div id="cart-wp" class="fl-right">
+								<div id="btn-cart">
+									<a href="/i8-web/gio-hang" style="display: block; color: #fff;">
+										<i class="fa fa-shopping-cart" aria-hidden="true"></i> <span
+										id="num">${ ITEMS}</span>
+								</div>
+								<div id="dropdown">
+									<p class="desc">
+										Có <span>${ ITEMS} sản phẩm</span> trong giỏ hàng
+									</p>
+									<c:forEach var="item" items="${ CART}">
+										<ul class="list-cart">
+											<li class="clearfix"><a href="" title=""
+												class="thumb fl-left"> <img
+													src="<c:url value='/resources/assets/images/${item.image }'/>"
+													alt="">
+											</a>
+												<div class="info fl-right">
+													<a href="" title="" class="product-name">${ item.name}</a>
+													<p class="price">${ item.price}</p>
+													<p class="qty">
+														Số lượng: <span>${ item.quantity}</span>
+													</p>
+												</div></li>
+										</ul>
+									</c:forEach>
+									<div class="total-price clearfix">
+										<p class="title fl-left">Tổng:</p>
+										<p class="price fl-right">${TOTAL }</p>
+									</div>
+									<dic class="action-cart clearfix"> <a
+										href="/i8-web/gio-hang" title="Giỏ hàng"
+										class="view-cart fl-left">Giỏ hàng</a> <a
+										href="/i8-web/thanh-toan" title="Thanh toán"
+										class="checkout fl-right">Thanh toán</a> </dic>
+									</a>
+								</div>
+								<div id="dropdown">
+									<c:choose>
+										<c:when test="${ITEMS=='0'}">
+											<div
+												style="padding: 5px; text-align: center; margin-top: 20px">
+												<center>
+													<img src="resources/assets/images/no_cart.png" alt="">
+													<p
+														style="color: #7e7878; margin-top: 20px; font-size: 20px;">Giỏ
+														hàng trống</p>
+												</center>
+											</div>
+											<br />
+										</c:when>
+										<c:otherwise>
+											<p class="desc">
+												Có <span>${ ITEMS} sản phẩm</span> trong giỏ hàng
+											</p>
+											<c:forEach var="item" items="${ CART}">
+												<ul class="list-cart">
+													<li class="clearfix"><a href="" title=""
+														class="thumb fl-left"> <img
+															src="/i8-web/resources/assets/images/${item.image }"
+															alt="">
+													</a>
+														<div class="info fl-right">
+															<a href="" title="" class="product-name">${ item.name}</a>
+															<p class="price">${ item.price}</p>
+															<p class="qty">
+																Số lượng: <span>${ item.quantity}</span>
+															</p>
+														</div></li>
+												</ul>
+											</c:forEach>
+											<div class="total-price clearfix">
+												<p class="title fl-left">Tổng:</p>
+												<p class="price fl-right">${TOTAL }</p>
+											</div>
+											<dic class="action-cart clearfix"> <a
+												href="/i8-web/gio-hang" title="Giỏ hàng"
+												class="view-cart fl-left">Giỏ hàng</a> <a
+												href="/i8-web/thanh-toan" title="Thanh toán"
+												class="checkout fl-right">Thanh toán</a> </dic>
+											<br />
+										</c:otherwise>
+									</c:choose>
+								</div>
 							</div>
 						</div>
 					</div>
-				</nav>
-			</div>	
-		</div>
-
-		<!-- Header Mobile -->
-		<div class="wrap-header-mobile">
-			<!-- Logo moblie -->		
-			<div class="logo-mobile">
-				<a href="index.html"><img src="images/icons/logo-01.png" alt="IMG-LOGO"></a>
-			</div>
-
-			<!-- Icon header -->
-			<div class="wrap-icon-header flex-w flex-r-m h-full m-r-15">
-				<div class="flex-c-m h-full p-r-5">
-					<div class="icon-header-item cl2 hov-cl1 trans-04 p-lr-11 icon-header-noti js-show-cart" data-notify="2">
-						<i class="zmdi zmdi-shopping-cart"></i>
-					</div>
 				</div>
 			</div>
-
-			<!-- Button show menu -->
-			<div class="btn-show-menu-mobile hamburger hamburger--squeeze">
-				<span class="hamburger-box">
-					<span class="hamburger-inner"></span>
-				</span>
-			</div>
-		</div>
-
-
-		<!-- Menu Mobile -->
-		<div class="menu-mobile">
-			<ul class="main-menu-m">
-				<li>
-					<a href="index.html">Home</a>
-					<ul class="sub-menu-m">
-						<li><a href="index.html">Homepage 1</a></li>
-						<li><a href="home-02.html">Homepage 2</a></li>
-						<li><a href="home-03.html">Homepage 3</a></li>
-					</ul>
-					<span class="arrow-main-menu-m">
-						<i class="fa fa-angle-right" aria-hidden="true"></i>
-					</span>
-				</li>
-
-				<li>
-					<a href="product.html">Shop</a>
-				</li>
-
-				<li>
-					<a href="shoping-cart.html" class="label1 rs1" data-label1="hot">Features</a>
-				</li>
-
-				<li>
-					<a href="blog.html">Blog</a>
-				</li>
-
-				<li>
-					<a href="about.html">About</a>
-				</li>
-
-				<li>
-					<a href="contact.html">Contact</a>
-				</li>
-			</ul>
-		</div>
-
-		<!-- Modal Search -->
-		<div class="modal-search-header flex-c-m trans-04 js-hide-modal-search">
-			<button class="flex-c-m btn-hide-modal-search trans-04">
-				<i class="zmdi zmdi-close"></i>
-			</button>
-
-			<form class="container-search-header">
-				<div class="wrap-search-header">
-					<input class="plh0" type="text" name="search" placeholder="Search...">
-
-					<button class="flex-c-m trans-04">
-						<i class="zmdi zmdi-search"></i>
-					</button>
-				</div>
-			</form>
-		</div>
-	</header>
