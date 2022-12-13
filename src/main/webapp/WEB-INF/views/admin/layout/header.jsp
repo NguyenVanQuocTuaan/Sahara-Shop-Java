@@ -64,6 +64,18 @@
                                     </li>
                                 </ul>
                             </li>
+                              <li>
+                                <a href="/i8-web/admin/post/list" title="">Bài viết</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="/i8-web/admin/post/create" title="">Thêm mới bài viết</a> 
+                                    </li>
+                                    <li>
+                                        <a href="/i8-web/admin/post/list" title="">Danh sách bài viết</a> 
+                                    </li>
+                                </ul>
+                            </li>
+                            
                             <li>
                                 <a href="/i8-web/admin/order/list" title="">Bán hàng</a>
                                 <ul class="sub-menu">
