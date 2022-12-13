@@ -84,7 +84,7 @@
 						<div id="main-menu-wp" class="fl-right">
 							<ul id="main-menu" class="clearfix">
 								<li><a href="/i8-web/trang-chu" title="">Trang chủ</a></li>
-								<li><a href="/i8-web/blog" title="">Blog</a></li>
+								
 								<c:choose>
 									<c:when test="${sessionScope.userAccount != null}">
 										<li><a href="/i8-web/thong-tin-don-hang" title="">Thông

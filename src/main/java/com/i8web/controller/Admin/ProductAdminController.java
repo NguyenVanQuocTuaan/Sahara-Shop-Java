@@ -38,11 +38,11 @@ public class ProductAdminController extends BaseProductController{
 	      return _mav;
 	   }
 	 @RequestMapping(value = "/admin/product/create", method = RequestMethod.POST)
-	   public ModelAndView create(@ModelAttribute("product") Products product) {
-	      ModelAndView mav = new ModelAndView("/admin/product/create");
+	   public String create(@ModelAttribute("product") Products product,HttpServletRequest req) {
+	      
 	      productService.insertProduct(product);
-	      mav.setViewName("admin/product/create");
-	      return mav;
+	      
+	      return "redirect:/admin/product/list";
 	   }
 	   @RequestMapping(value = "/admin/product/list", method = RequestMethod.GET)
 	   public ModelAndView list(HttpSession session) {

@@ -123,26 +123,7 @@
 								</tr>
 							</tbody>
 						</table>
-						<table>
-							<thead>
-								<tr>
-									<td colspan="2">Hãng</td>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td><input type="radio" name="brand" checked></td>
-									<td>Tất cả</td>
-								</tr>
-								<c:forEach var="item" items="${ listBrand }">
-								<tr>
-									<td><input type="radio"
-										class="common_selector_brand brand" name="brand" value="${ item }"></td>
-									<td>${ item }</td>
-								</tr>
-								</c:forEach>
-							</tbody>
-						</table>
+						
 					</form>
 				</div>
 			</div>
