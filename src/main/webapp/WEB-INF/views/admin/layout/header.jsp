@@ -82,9 +82,6 @@
                                 <a href="/i8-web/admin/report/product" title="">Thống kê</a>
                                 <ul class="sub-menu">
                                     <li>
-                                        <a href="/i8-web/admin/report/category" title="">Thống kê sản phẩm theo danh mục</a> 
-                                    </li>
-                                    <li>
                                         <a href="/i8-web/admin/report/product" title="">Thống kê doanh thu theo sản phẩm</a> 
                                     </li>
                                     <li>

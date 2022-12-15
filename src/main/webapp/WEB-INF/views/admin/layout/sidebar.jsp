@@ -52,9 +52,6 @@
             </a>
             <ul class="sub-menu">
                 <li class="nav-item">
-                    <a href="/i8-web/admin/report/category" title="" class="nav-link">Thống kê sản phẩm theo danh mục</a>
-                </li>
-                <li class="nav-item">
                     <a href="/i8-web/admin/report/product" title="" class="nav-link">Thống kê doanh thu theo sản phẩm</a>
                 </li>
                 <li class="nav-item">

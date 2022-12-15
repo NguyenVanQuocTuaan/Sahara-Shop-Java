@@ -38,7 +38,11 @@ public class OrderAdminController {
 		mav.addObject("productDetails", orderModel.getProductByOrderID(id));
 		return mav;
 	}
-	
+	@RequestMapping(value = "/admin/order/detail/{id}", method = RequestMethod.POST)
+	public String postDetail(@PathVariable int id,@ModelAttribute("order") Order order,HttpServletRequest req) {
+		orderModel.UpdateDataOrder(order);
+		return "redirect:/admin/order/detail/{id}";
+	}
 	@RequestMapping(value = "DeleteOrder/{id}")
 	   public String delete(@PathVariable int id,HttpServletRequest req) {
 	   orderModel.DeleteDataOrder(id);

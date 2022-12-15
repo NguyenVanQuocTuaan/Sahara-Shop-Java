@@ -21,10 +21,16 @@
 							<h3 class="title">Thông tin vận chuyển</h3> <span class="detail">${order.pay }</span>
 						</li>
 						<form:form method="POST" action="" modelAttribute="order">
-							<h3 class="title">Tình trạng đơn hàng:</h3>${order.status}
-							
-							
+							<div style="display:flex; ">
+							<span class="fa fa-database icon"></span><h3 style="top: -3px;left: -12px;" class="title">Tình trạng đơn hàng</h3>
+							</div>
+							<span>${order.status} </span>
+							<form:input type="hidden" value="Đã xác nhận" path="status" />
+							<div>
+								<button style="margin-top: 10px;" type="submit" name="btn-submit" id="btn-submit">Xác nhận</button>
+							</div>
 						</form:form>
+						
 					</ul>
 
 				</div>

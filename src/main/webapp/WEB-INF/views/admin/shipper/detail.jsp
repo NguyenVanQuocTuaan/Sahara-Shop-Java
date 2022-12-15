@@ -19,7 +19,9 @@
 						<li>
 							<h3 class="title">Thông tin vận chuyển</h3> <span class="detail">${order.pay }</span>
 						</li>
-						<form:form method="POST" action="" modelAttribute="order">
+						
+						<h3 class="title" style="padding: 0">Tình trạng đơn hàng</h3><span class="detail">${order.status }</span>
+						<form:form style="margin-top: 10px;" method="POST" action="" modelAttribute="order">
 							<form:select name="status" path="status">
 								<option value="Chờ lấy hàng">Chờ lấy hàng</option>
 								<option value='Đang giao'>Đang giao</option>
@@ -29,7 +31,6 @@
 							<input type="submit" name="sm_status" onclick="display()"
 								value="Cập nhật đơn hàng">
 						</form:form>
-						<h3 class="title" style="padding: 0">Tình trạng đơn hàng</h3><span class="detail">${order.status }</span>
 					</ul>
 
 				</div>
