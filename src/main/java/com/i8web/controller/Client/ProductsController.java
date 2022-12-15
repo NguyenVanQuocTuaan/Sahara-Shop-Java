@@ -49,7 +49,7 @@ public class ProductsController {
 	      ModelAndView mav = new ModelAndView("product/detail_product");
 	      mav.addObject("listCat", productsServiceImpl.GetDataCategory());
 	      mav.addObject("ProductId", productsServiceImpl.GetProductsById(Integer.parseInt(id)));
-	      mav.addObject("listMobile", homeServiceImpl.GetDataMobile());
+	      mav.addObject("listProductHome1", homeServiceImpl.GetDataProductHome1());
 	      return mav;
 	}
 	// Lọc sản phẩm theo giá

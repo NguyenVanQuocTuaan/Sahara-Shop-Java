@@ -10,8 +10,8 @@ import com.i8web.entity.Client.Home;
 public interface IHomeService {
 	@Autowired
 	public List<Category> GetDataCategory();
-	public List<Home> GetDataMobile();
-	public List<Home> GetDataLaptop();
+	public List<Home> GetDataProductHome1();
+	public List<Home> GetDataProductHome2();
 	public List<Home> GetDataProductNew();
 	public List<Home> GetDataProductSale();
 	public List<Home> GetSearchData(String key);

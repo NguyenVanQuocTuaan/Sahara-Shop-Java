@@ -16,11 +16,11 @@ public class HomeServiceImpl implements IHomeService {
 	public List<Category> GetDataCategory(){
 		return homeModel.GetDataCategory();
 	}
-	public List<Home> GetDataMobile() {
-		return homeModel.GetDataMobile();
+	public List<Home> GetDataProductHome1() {
+		return homeModel.GetDataProductHome1();
 	}
-	public List<Home> GetDataLaptop() {
-		return homeModel.GetDataLaptop();
+	public List<Home> GetDataProductHome2() {
+		return homeModel.GetDataProductHome2();
 	}
 	public List<Home> GetDataProductNew() {
 		return homeModel.GetDataProductNew();

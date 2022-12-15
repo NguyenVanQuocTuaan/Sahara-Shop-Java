@@ -26,16 +26,16 @@ public class HomeModel {
 		return list;
 	}
 	
-	public List<Home> GetDataMobile() {
+	public List<Home> GetDataProductHome1() {
 		List<Home> list = new ArrayList<Home>();
 		String sql = "SELECT * FROM products WHERE product_id = 1";
 		list = _jdbcTemplate.query(sql, new MapperHome());
 		return list;
 	}
 	
-	public List<Home> GetDataLaptop() {
+	public List<Home> GetDataProductHome2() {
 		List<Home> list = new ArrayList<Home>();
-		String sql = "SELECT * FROM products WHERE product_id = 3";
+		String sql = "SELECT * FROM products WHERE product_id = 2";
 		list = _jdbcTemplate.query(sql, new MapperHome());
 		return list;
 	}

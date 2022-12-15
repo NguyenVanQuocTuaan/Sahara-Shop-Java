@@ -93,11 +93,11 @@
 				</div>
 				<div class="section" id="list-product-wp">
 					<div class="section-head">
-						<h3 class="section-title">Đầm</h3>
+						<h3 class="section-title">ÁO SƠ MI</h3>
 					</div>
 					<div class="section-detail">
 						<ul class="list-item clearfix">
-							<c:forEach var="item" items="${ listMobile }">
+							<c:forEach var="item" items="${ listProductHome1 }">
 								<li><a
 									href="/i8-web/chi-tiet-san-pham/${item.slug }?id=${item.id }"
 									title="" class="thumb"> <img
@@ -120,11 +120,11 @@
 				</div>
 				<div class="section" id="list-product-wp">
 					<div class="section-head">
-						<h3 class="section-title">Áo dài</h3>
+						<h3 class="section-title">ĐẦM</h3>
 					</div>
 					<div class="section-detail">
 						<ul class="list-item clearfix">
-							<c:forEach var="item" items="${ listLaptop }">
+							<c:forEach var="item" items="${ listProductHome2 }">
 								<li><a
 									href="/i8-web/chi-tiet-san-pham/${item.slug }?id=${item.id }"
 									title="" class="thumb"> <img

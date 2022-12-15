@@ -31,8 +31,8 @@ public class RegisterHomeController {
 			sessionService.set("userAccount", username);
 			ModelAndView mav = new ModelAndView("home/home");
 			mav.addObject("listCat", homeServiceImpl.GetDataCategory());
-			mav.addObject("listMobile", homeServiceImpl.GetDataMobile());
-			mav.addObject("listLaptop", homeServiceImpl.GetDataLaptop());
+			mav.addObject("listProductHome1", homeServiceImpl.GetDataProductHome1());
+			mav.addObject("listProductHome2", homeServiceImpl.GetDataProductHome2());
 			mav.addObject("listNew", homeServiceImpl.GetDataProductNew());
 			mav.addObject("listSale", homeServiceImpl.GetDataProductSale());
 			
