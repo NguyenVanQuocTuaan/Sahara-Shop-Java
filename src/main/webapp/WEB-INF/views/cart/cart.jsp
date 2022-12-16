@@ -37,7 +37,6 @@
 		                            <td>Tên sản phẩm</td>
 		                            <td>Giá sản phẩm</td>
 		                            <td>Số lượng</td>
-		                            <td>Size</td>
 		                            <td>Thành tiền</td>
 		                            <td> Xóa sản phẩm</td>
 		                        </tr>
@@ -53,12 +52,7 @@
 				                        <td>${ item.price}</td>
 				                        <td><input name="quantity" value="${ item.quantity}" 
 				           	                	onblur="this.form.submit()" style="width:50px;"></td>
-				           	            <td><select name="quantity">
-											<option value="">S</option>
-											<option value="">M</option>
-											<option value="">L</option>
-											<option value="">XL</option>
-										</select></td>
+
 										<td>${ item.amount}</td>
 				                        <td>
 				                        

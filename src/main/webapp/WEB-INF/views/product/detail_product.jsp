@@ -9,7 +9,7 @@
                         <a href="/i8-web/trang-chu" title="">Trang chủ</a>
                     </li>
                     <li>
-                        <a href="" title="">Đầm</a>
+                        <a href="" title="">Áo sơ mi</a>
                     </li>
                 </ul>
             </div>
@@ -64,7 +64,7 @@
                 </div>
                 <div class="section-detail">
                     <ul class="list-item">
-                        <c:forEach var="item" items="${ listMobile }">
+                        <c:forEach var="item" items="${ listProductHome1 }">
 								<li><a
 									href="/i8-web/chi-tiet-san-pham/${item.slug }?id=${item.id }"
 									title="" class="thumb"> <img
